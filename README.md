@@ -40,12 +40,18 @@ Now that the project is running, you can enter the following commands in the con
 <br>
 
 › Press `a` │ open Android emulator
+<br>
 › Press `i` │ open iOS simulator
+<br>
 › Press `w` │ open web
 <br>
+<br>
 › Press `j` │ open debugger
+<br>
 › Press `r` │ reload app
+<br>
 › Press `m` │ toggle menu
+<br>
 <br>
 You can also scan the QR code shown in the console with Expo Go (Android) or the Camera app (iOS) to open the project on a physical device.
 
@@ -74,5 +80,8 @@ Native Base version: <b>3.4.28</b>
 [React-i18next](https://react.i18next.com/) is a powerful internationalization framework for React / React Native which is based on [i18next](https://www.i18next.com/). Together with [Expo localization](https://docs.expo.dev/versions/latest/sdk/localization/), which provides access to the locale data on the native device, the project is being translated based on the set language of the device.
 
 I18next version: <b>23.2.11</b>
+<br>
 React-i18next version: <b>13.0.2</b>
+<br>
 Expo-localization version: <b>14.1.1</b>
+<br>
