@@ -1,0 +1,28 @@
+{
+    "dashboard": {
+        "title": "Dashboard",
+        "stepOne": {
+            "title": "Step One",
+            "description": "Edit Dashboard/index.tsx to change this screen and then come back to see your edits."
+        },
+        "navigation": {
+            "title": "Navigation",
+            "description": "Navigation makes use of the React Navigation library. This is a library that is used by many React Native applications."
+        },
+        "nativeBase": {
+            "title": "Native Base",
+            "description": "Native Base is a UI library that is used by many React Native applications. It is a great way to get started with React Native."
+        },
+        "learnMore" :{
+            "title": "Learn More",
+            "description": "Read the docs to discover what to do next."
+        },
+        "toastDemo" :{
+            "title": "OMG A TOAST!",
+            "description": "One of the many NativeBase features."
+        }
+    },
+    "about":{
+        "title": "About"
+    }
+}
