@@ -1,6 +1,6 @@
 // extend the theme
 
-import {extendTheme} from 'native-base';
+import { extendTheme } from 'native-base';
 
 // Define the config
 const config = {
@@ -11,7 +11,7 @@ export const customTheme = extendTheme({
     config,
     components: {
         Toast: {
-            baseStyle:{
+            baseStyle: {
                 rounded: 'full',
                 bg: 'green.800',
                 px: 6,

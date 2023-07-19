@@ -1,8 +1,8 @@
-import {Pressable, Row, Text} from 'native-base';
-import IcChevronRight from '@/icons/IcChevronRight';
+import { Pressable, Row, Text } from 'native-base';
 import React from 'react';
-import {useColorScheme} from 'react-native';
-import {useTranslation} from 'react-i18next';
+import { useColorScheme } from 'react-native';
+import { useTranslation } from 'react-i18next';
+import IcChevronRight from '@/icons/IcChevronRight';
 
 interface SectionProps {
     title: string;
@@ -11,10 +11,10 @@ interface SectionProps {
 }
 
 const Section = (props: SectionProps) => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const isDarkMode = useColorScheme() === 'dark';
 
-    const {title, children, onPress} = props;
+    const { title, children, onPress } = props;
 
     return (
         <Pressable mt={8} onPress={onPress}>

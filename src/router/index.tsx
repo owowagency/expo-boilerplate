@@ -1,9 +1,9 @@
-import {NativeStackNavigationOptions, createNativeStackNavigator} from '@react-navigation/native-stack';
-import AboutScreen from '@/screens/about';
+import { NativeStackNavigationOptions, createNativeStackNavigator } from '@react-navigation/native-stack';
 import DashboardScreen from 'screens/dashboard';
 import React from 'react';
-import {screens} from 'router/screens';
-import {useTranslation} from 'react-i18next';
+import { screens } from 'router/screens';
+import { useTranslation } from 'react-i18next';
+import AboutScreen from '@/screens/about';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +17,7 @@ export const defaultHeaderStyle: NativeStackNavigationOptions = {
 };
 
 const Router = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <Stack.Navigator

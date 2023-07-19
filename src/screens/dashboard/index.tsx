@@ -1,16 +1,16 @@
-import {Box, Column, Image, ScrollView, useToast} from 'native-base';
-import {NavigationProps} from 'router/params';
+import { Box, Column, Image, ScrollView, useToast } from 'native-base';
+import { NavigationProps } from 'router/params';
 import React from 'react';
 import Section from 'components/generic/Section';
-import {useColorScheme} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {useTranslation} from 'react-i18next';
+import { useColorScheme } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { useTranslation } from 'react-i18next';
 
 const DashboardScreen = () => {
     const navigation = useNavigation<NavigationProps>();
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const isDarkMode = useColorScheme() === 'dark';
-    const {show} = useToast();
+    const { show } = useToast();
 
     const handleNavigation = () => {
         // Learn More: https://reactnavigation.org/docs/navigating/

@@ -1,6 +1,6 @@
-import {Column, ScrollView, Text} from 'native-base';
-import AboutSectionCell from '@/components/about/AboutSectionCell';
+import { Column, ScrollView, Text } from 'native-base';
 import React from 'react';
+import AboutSectionCell from '@/components/about/AboutSectionCell';
 
 const AboutScreen = () => {
     return (
