@@ -9,7 +9,7 @@ module.exports = {
         },
     },
     extends: [
-        '@owowagency/eslint-config-basic',
+        '@owowagency/eslint-config-react',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -25,4 +25,10 @@ module.exports = {
         '@typescript-eslint',
         'unused-imports',
     ],
+    globals: {
+        JSX: true,
+    },
+    rules: {
+        '@typescript-eslint/no-require-imports': 'off',
+    },
 };

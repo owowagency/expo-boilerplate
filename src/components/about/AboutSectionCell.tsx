@@ -3,9 +3,9 @@ import { Linking } from 'react-native';
 import React from 'react';
 
 interface AboutSectionCellProps {
-    title: string;
-    link: string;
-    children: React.ReactNode;
+    title: string
+    link: string
+    children: React.ReactNode
 }
 
 const AboutSectionCell = (props: AboutSectionCellProps) => {
@@ -17,9 +17,18 @@ const AboutSectionCell = (props: AboutSectionCellProps) => {
     };
 
     return (
-        <Row alignItems='center' space={4}>
-            <Pressable onPress={handlePress} flex={1} alignItems='center'>
-                <Text color='blue.600' fontSize={16} underline>{title}</Text>
+        <Row
+            alignItems="center"
+            space={4}>
+            <Pressable
+                alignItems="center"
+                flex={1}
+                onPress={handlePress}>
+                <Text
+                    color="blue.600"
+                    fontSize={16}
+                    underline>{title}
+                </Text>
             </Pressable>
 
             <Column flex={5}>

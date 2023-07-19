@@ -22,8 +22,8 @@ const Root = (): JSX.Element => {
                     <App />
 
                     <StatusBar
-                        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
                         backgroundColor={backgroundStyle.backgroundColor}
+                        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
                     />
                 </NativeBaseProvider>
             </I18nextProvider>

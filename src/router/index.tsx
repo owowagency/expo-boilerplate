@@ -1,8 +1,9 @@
-import { NativeStackNavigationOptions, createNativeStackNavigator } from '@react-navigation/native-stack';
+import type { NativeStackNavigationOptions } from '@react-navigation/native-stack/lib/typescript/src/types';
 import DashboardScreen from 'screens/dashboard';
 import React from 'react';
 import { screens } from 'router/screens';
 import { useTranslation } from 'react-i18next';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import AboutScreen from '@/screens/about';
 
 const Stack = createNativeStackNavigator();
@@ -24,9 +25,9 @@ const Router = () => {
             initialRouteName={screens.Dashboard}
         >
             <Stack.Screen
-                name={screens.Dashboard}
                 key={screens.Dashboard}
                 component={DashboardScreen}
+                name={screens.Dashboard}
                 options={{
                     ...defaultHeaderStyle,
                     headerTitle: t('dashboard.title'),
@@ -34,9 +35,9 @@ const Router = () => {
             />
 
             <Stack.Screen
-                name={screens.About}
                 key={screens.About}
                 component={AboutScreen}
+                name={screens.About}
                 options={{
                     ...defaultHeaderStyle,
                     headerTitle: t('about.title'),

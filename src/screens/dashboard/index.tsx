@@ -1,5 +1,5 @@
 import { Box, Column, Image, ScrollView, useToast } from 'native-base';
-import { NavigationProps } from 'router/params';
+import type { NavigationProps } from 'router/params';
 import React from 'react';
 import Section from 'components/generic/Section';
 import { useColorScheme } from 'react-native';
@@ -28,17 +28,24 @@ const DashboardScreen = () => {
     };
 
     return (
-        <Column bgColor={isDarkMode ? 'black' : 'white'} flex={1}>
+        <Column
+            bgColor={isDarkMode ? 'black' : 'white'}
+            flex={1}>
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
             >
-                <Column flex={1} px={6} safeAreaBottom>
-                    <Box px={6} bg='white'>
+                <Column
+                    flex={1}
+                    px={6}
+                    safeAreaBottom>
+                    <Box
+                        bg="white"
+                        px={6}>
                         <Image
-                            source={require('assets/OwowLogo.png')}
-                            resizeMode='contain'
                             alt="OWOW Logo"
                             height={200}
+                            resizeMode="contain"
+                            source={require('assets/OwowLogo.png')}
                         />
                     </Box>
 
@@ -47,11 +54,15 @@ const DashboardScreen = () => {
                             {t('dashboard.stepOne.description')}
                         </Section>
 
-                        <Section title="dashboard.navigation.title" onPress={handleNavigation}>
+                        <Section
+                            onPress={handleNavigation}
+                            title="dashboard.navigation.title">
                             {t('dashboard.navigation.description')}
                         </Section>
 
-                        <Section title="dashboard.nativeBase.title" onPress={handleNativeBase}>
+                        <Section
+                            onPress={handleNativeBase}
+                            title="dashboard.nativeBase.title">
                             {t('dashboard.nativeBase.description')}
                         </Section>
 

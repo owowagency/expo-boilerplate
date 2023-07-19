@@ -1,8 +1,8 @@
-import { NavigationProp } from '@react-navigation/native';
+import { type NavigationProp } from '@react-navigation/native';
 
-export type ParamList = {
-    Dashboard: undefined;
-    About: undefined;
+export interface ParamList {
+    Dashboard: undefined
+    About: undefined
 };
 
-export type NavigationProps = NavigationProp<ParamList>
+export type NavigationProps = NavigationProp<ParamList>;

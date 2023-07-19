@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 import IcChevronRight from '@/icons/IcChevronRight';
 
 interface SectionProps {
-    title: string;
-    children: React.ReactNode;
-    onPress?: () => void;
+    title: string
+    children: React.ReactNode
+    onPress?: () => void
 }
 
 const Section = (props: SectionProps) => {
@@ -17,8 +17,12 @@ const Section = (props: SectionProps) => {
     const { title, children, onPress } = props;
 
     return (
-        <Pressable mt={8} onPress={onPress}>
-            <Row alignItems='center' space={1}>
+        <Pressable
+            mt={8}
+            onPress={onPress}>
+            <Row
+                alignItems="center"
+                space={1}>
                 <Text
                     color={isDarkMode ? 'white' : 'black'}
                     fontSize={24}
@@ -27,14 +31,20 @@ const Section = (props: SectionProps) => {
                     {t(title)}
                 </Text>
 
-                {onPress && <IcChevronRight fill='black' width={24} height={24}/>}
+                {onPress && (
+                <IcChevronRight
+                    fill="black"
+                    height={24}
+                    width={24}
+/>
+                )}
             </Row>
 
             <Text
                 color={isDarkMode ? 'white' : 'black'}
-                mt={2}
                 fontSize={18}
                 fontWeight={400}
+                mt={2}
             >
                 {children}
             </Text>
