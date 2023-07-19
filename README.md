@@ -7,8 +7,6 @@
 </p>
 
 <br>
-<br>
-<br>
 
 ## About
 
