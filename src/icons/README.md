@@ -13,6 +13,7 @@ Simple `.svg` files aren't supported withing React Native, so to display SVG ico
 
 To generate React Components from SVG files we like to use SVGR. SVGR is an universal tool to transform SVG into React components. SVGR takes a raw SVG and transforms it into a ready-to-use React component.
 <br>
+<br>
 For example, lets take the chervon icon present in this application: `IcChevronRight.tsx`. It's SVG file look like the following:
 ```svg
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,6 +43,7 @@ const SvgComponent = (props: SvgProps) => (
 );
 ```
 Which is a perfectly workable React Component with available props to edit it's color and size.
+<br>
 
 ## Using the playground
 
