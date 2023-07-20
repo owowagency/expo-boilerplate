@@ -3,14 +3,14 @@
     <img src="assets/expo-logo.png" alt="Logo" width="250">
   </a>
 
-  <h1 align="center">React Native Boilerplate</h1>
+  <h1 align="center">Expo Boilerplate</h1>
 </p>
 
 <br>
 
 ## About
 
-Expo Boilerplate can be used to kick start a react native project in a matter of seconds. 
+Expo Boilerplate can be used to kick start an Expo project in a matter of seconds. 
 
 
 ## Installation
