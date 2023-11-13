@@ -1,3 +1,4 @@
+import BottomSheet from './bottom-sheet';
 import Box from './box';
 import Column from './column';
 import Pressable from './pressable';
@@ -12,4 +13,5 @@ export {
     ScrollView,
     Column,
     Row,
+    BottomSheet,
 };
