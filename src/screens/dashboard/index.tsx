@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import { Image } from 'expo-image';
 import { Box, Column, ScrollView } from '@/atoms';
 import useToast from '@/hooks/use-toast';
-import BottomSheetButton from '@/components/BottomSheetButton';
 
 const DashboardScreen = () => {
     const { t } = useTranslation();
@@ -45,8 +44,6 @@ const DashboardScreen = () => {
                             style={{ height: 200 }}
                         />
                     </Box>
-
-                    <BottomSheetButton />
 
                     <Column>
                         <Section title="dashboard.stepOne.title">
