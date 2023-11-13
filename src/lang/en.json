@@ -5,13 +5,13 @@
             "title": "Step One",
             "description": "Edit Dashboard/index.tsx to change this screen and then come back to see your edits."
         },
-        "navigation": {
-            "title": "Navigation",
-            "description": "Navigation makes use of the React Navigation library. This is a library that is used by many React Native applications."
-        },
         "nativeBase": {
-            "title": "Native Base",
-            "description": "Native Base is a UI library that is used by many React Native applications. It is a great way to get started with React Native."
+            "title": "Shopify/restyle",
+            "description": "Shopify/restyle is a library used for styling in many React applications. For the toast notifications Burnt is used, a small package that uses Native code to display toasts."
+        },
+        "navigation": {
+            "title": "Expo Router",
+            "description": "Expo Router is a navigation library widely used in Expo applications. It provides an excellent starting point for Expo development."
         },
         "learnMore" :{
             "title": "Learn More",
