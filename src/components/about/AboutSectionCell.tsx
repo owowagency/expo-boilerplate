@@ -1,7 +1,6 @@
-import { Pressable } from 'native-base';
 import { Linking } from 'react-native';
 import React from 'react';
-import { Box, Text } from '@/atoms';
+import { Box, Pressable, Row, Text } from '@/atoms';
 
 interface AboutSectionCellProps {
     title: string
@@ -18,9 +17,8 @@ const AboutSectionCell = (props: AboutSectionCellProps) => {
     };
 
     return (
-        <Box
+        <Row
             alignItems="center"
-            flexDirection="row"
             g={4}
         >
             <Pressable
@@ -41,7 +39,7 @@ const AboutSectionCell = (props: AboutSectionCellProps) => {
             >
                 {children}
             </Box>
-        </Box>
+        </Row>
     );
 };
 

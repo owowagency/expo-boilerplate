@@ -30,7 +30,15 @@
     },
     "plugins": [
       "expo-localization",
-      "expo-router"
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.0"
+          }
+        }
+      ]
     ]
   }
 }

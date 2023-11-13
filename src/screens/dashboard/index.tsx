@@ -1,10 +1,10 @@
-import { ScrollView, useToast } from 'native-base';
+import { useToast } from 'native-base';
 import React from 'react';
 import Section from 'components/generic/Section';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'expo-image';
-import { Box } from '@/atoms';
+import { Box, Column, ScrollView } from '@/atoms';
 
 const DashboardScreen = () => {
     const { t } = useTranslation();
@@ -25,17 +25,15 @@ const DashboardScreen = () => {
     };
 
     return (
-        <Box
+        <Column
             bg="$windowBackground"
             flex={1}
-            flexDirection="column"
         >
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
             >
-                <Box
+                <Column
                     flex={1}
-                    flexDirection="column"
                     px={6}
                 >
                     <Box
@@ -46,12 +44,11 @@ const DashboardScreen = () => {
                             alt="OWOW Logo"
                             contentFit="contain"
                             source={require('assets/OwowLogo.png')}
+                            style={{ height: 200 }}
                         />
                     </Box>
 
-                    <Box
-                        flexDirection="column"
-                    >
+                    <Column>
                         <Section title="dashboard.stepOne.title">
                             {t('dashboard.stepOne.description')}
                         </Section>
@@ -71,10 +68,10 @@ const DashboardScreen = () => {
                         <Section title="dashboard.learnMore.title">
                             {t('dashboard.learnMore.description')}
                         </Section>
-                    </Box>
-                </Box>
+                    </Column>
+                </Column>
             </ScrollView>
-        </Box>
+        </Column>
     );
 };
 
