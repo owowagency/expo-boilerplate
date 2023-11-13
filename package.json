@@ -11,8 +11,6 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
-    "@react-navigation/native": "^6.1.7",
-    "@react-navigation/native-stack": "^6.9.13",
     "expo": "^49.0.18",
     "expo-constants": "~14.4.2",
     "expo-linking": "~5.0.2",
