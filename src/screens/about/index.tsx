@@ -1,19 +1,22 @@
-import { Column, ScrollView, Text } from 'native-base';
+import { ScrollView } from 'native-base';
 import React from 'react';
 import AboutSectionCell from '@/components/about/AboutSectionCell';
+import { Box, Text } from '@/atoms';
 
 const AboutScreen = () => {
     return (
-        <Column
+        <Box
             bg="white"
             flex={1}
+            flexDirection="column"
         >
             <ScrollView showsVerticalScrollIndicator={false}>
-                <Column
+                <Box
+                    flexDirection="column"
+                    g={6}
                     px={6}
                     py={4}
-                    safeAreaBottom
-                    space={6}>
+                >
                     <AboutSectionCell
                         link="https://react.i18next.com/"
                         title="i18n">
@@ -29,9 +32,9 @@ const AboutScreen = () => {
                             React Native SVG is a library that allows us to use SVGs in our app.
                         </Text>
                     </AboutSectionCell>
-                </Column>
+                </Box>
             </ScrollView>
-        </Column>
+        </Box>
     );
 };
 

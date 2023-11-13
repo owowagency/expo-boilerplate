@@ -1,13 +1,13 @@
-import { Box, Column, Image, ScrollView, useToast } from 'native-base';
+import { ScrollView, useToast } from 'native-base';
 import React from 'react';
 import Section from 'components/generic/Section';
-import { useColorScheme } from 'react-native';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { Image } from 'expo-image';
+import { Box } from '@/atoms';
 
 const DashboardScreen = () => {
     const { t } = useTranslation();
-    const isDarkMode = useColorScheme() === 'dark';
     const { show } = useToast();
 
     const handleNavigation = () => {
@@ -25,28 +25,33 @@ const DashboardScreen = () => {
     };
 
     return (
-        <Column
-            bgColor={isDarkMode ? 'black' : 'white'}
-            flex={1}>
+        <Box
+            bg="$windowBackground"
+            flex={1}
+            flexDirection="column"
+        >
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
             >
-                <Column
+                <Box
                     flex={1}
+                    flexDirection="column"
                     px={6}
-                    safeAreaBottom>
+                >
                     <Box
-                        bg="white"
-                        px={6}>
+                        height={200}
+                        px={6}
+                    >
                         <Image
                             alt="OWOW Logo"
-                            height={200}
-                            resizeMode="contain"
+                            contentFit="contain"
                             source={require('assets/OwowLogo.png')}
                         />
                     </Box>
 
-                    <Box>
+                    <Box
+                        flexDirection="column"
+                    >
                         <Section title="dashboard.stepOne.title">
                             {t('dashboard.stepOne.description')}
                         </Section>
@@ -67,9 +72,9 @@ const DashboardScreen = () => {
                             {t('dashboard.learnMore.description')}
                         </Section>
                     </Box>
-                </Column>
+                </Box>
             </ScrollView>
-        </Column>
+        </Box>
     );
 };
 

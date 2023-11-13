@@ -1,8 +1,9 @@
-import { Pressable, Row, Text } from 'native-base';
+import { Pressable } from 'native-base';
 import React from 'react';
 import { useColorScheme } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import IcChevronRight from '@/icons/IcChevronRight';
+import { Box, Text } from '@/atoms';
 
 interface SectionProps {
     title: string
@@ -20,30 +21,31 @@ const Section = (props: SectionProps) => {
         <Pressable
             mt={8}
             onPress={onPress}>
-            <Row
+            <Box
                 alignItems="center"
-                space={1}>
+                flexDirection="row"
+                g={1}
+            >
                 <Text
                     color={isDarkMode ? 'white' : 'black'}
                     fontSize={24}
-                    fontWeight={600}
+                    fontWeight="600"
                 >
                     {t(title)}
                 </Text>
 
                 {onPress && (
-                <IcChevronRight
-                    fill="black"
-                    height={24}
-                    width={24}
-/>
+                    <IcChevronRight
+                        fill="black"
+                        height={24}
+                        width={24}
+                    />
                 )}
-            </Row>
+            </Box>
 
             <Text
-                color={isDarkMode ? 'white' : 'black'}
                 fontSize={18}
-                fontWeight={400}
+                fontWeight="400"
                 mt={2}
             >
                 {children}

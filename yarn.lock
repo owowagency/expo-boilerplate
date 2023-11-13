@@ -3046,6 +3046,11 @@
     component-type "^1.2.1"
     join-component "^1.1.0"
 
+"@shopify/restyle@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@shopify/restyle/-/restyle-2.4.2.tgz#bffb5cec619d6ea61e1fab1ec40dec9482946460"
+  integrity sha512-r01j9bbXkhZZkGkLnE6jsJvSCkcjwXBySfe8bQCB7duEfQn36mU6WumNc2pndzXpZhPSevppyXzFZ2jY3XUakw==
+
 "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
@@ -5186,6 +5191,11 @@ expo-head@0.0.18:
   integrity sha512-GaTAUiPf30GgoUTJEDJI0UdDUlLdfbFffU6NerIMwklSCFXJ1f9Nr8XG5qPEwm71ri/dssbToaMorIaXxtIc7Q==
   dependencies:
     react-helmet-async "^1.3.0"
+
+expo-image@~1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/expo-image/-/expo-image-1.3.5.tgz#426deca8cc9a8a3e72a649e9d98c5019efde0d37"
+  integrity sha512-yrIR2mnfIKbKcguoqWK3U5m3zvLPnonvSCabB2ErVGhws8zQs7ILYf+7T08j8U6eFcohjw0CoAFJ6RWNsX2EhA==
 
 expo-keep-awake@~12.3.0:
   version "12.3.0"
