@@ -1,10 +1,10 @@
-import { useToast } from 'native-base';
 import React from 'react';
 import Section from 'components/generic/Section';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'expo-image';
 import { Box, Column, ScrollView } from '@/atoms';
+import useToast from '@/hooks/use-toast';
 
 const DashboardScreen = () => {
     const { t } = useTranslation();
@@ -15,12 +15,9 @@ const DashboardScreen = () => {
     };
 
     const handleNativeBase = () => {
-        // Learn More: https://docs.nativebase.io/
-        // Edit the default style at helpers/theme.ts
         show({
-            title: t('dashboard.toastDemo.title'),
-            description: t('dashboard.toastDemo.description'),
-            placement: 'top',
+            title: 'Hello OWOW',
+            message: 'This is a toast',
         });
     };
 
