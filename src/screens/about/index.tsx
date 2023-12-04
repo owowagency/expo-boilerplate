@@ -1,6 +1,6 @@
-import { Column, ScrollView, Text } from 'native-base';
 import React from 'react';
 import AboutSectionCell from '@/components/about/AboutSectionCell';
+import { Column, ScrollView, Text } from '@/atoms';
 
 const AboutScreen = () => {
     return (
@@ -10,10 +10,10 @@ const AboutScreen = () => {
         >
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Column
+                    g={6}
                     px={6}
                     py={4}
-                    safeAreaBottom
-                    space={6}>
+                >
                     <AboutSectionCell
                         link="https://react.i18next.com/"
                         title="i18n">

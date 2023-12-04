@@ -1,55 +1,51 @@
-import { Box, Column, Image, ScrollView, useToast } from 'native-base';
-import type { NavigationProps } from 'router/params';
 import React from 'react';
 import Section from 'components/generic/Section';
-import { useColorScheme } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { Image } from 'expo-image';
+import { Box, Column, ScrollView } from '@/atoms';
+import useToast from '@/hooks/use-toast';
 
 const DashboardScreen = () => {
-    const navigation = useNavigation<NavigationProps>();
     const { t } = useTranslation();
-    const isDarkMode = useColorScheme() === 'dark';
     const { show } = useToast();
 
     const handleNavigation = () => {
-        // Learn More: https://reactnavigation.org/docs/navigating/
-        navigation.navigate('About');
+        router.push('/about');
     };
 
     const handleNativeBase = () => {
-        // Learn More: https://docs.nativebase.io/
-        // Edit the default style at helpers/theme.ts
         show({
-            title: t('dashboard.toastDemo.title'),
-            description: t('dashboard.toastDemo.description'),
-            placement: 'top',
+            title: 'Hello OWOW',
+            message: 'This is a toast',
         });
     };
 
     return (
         <Column
-            bgColor={isDarkMode ? 'black' : 'white'}
-            flex={1}>
+            bg="$windowBackground"
+            flex={1}
+        >
             <ScrollView
                 contentInsetAdjustmentBehavior="automatic"
             >
                 <Column
                     flex={1}
                     px={6}
-                    safeAreaBottom>
+                >
                     <Box
-                        bg="white"
-                        px={6}>
+                        height={200}
+                        px={6}
+                    >
                         <Image
                             alt="OWOW Logo"
-                            height={200}
-                            resizeMode="contain"
+                            contentFit="contain"
                             source={require('assets/OwowLogo.png')}
+                            style={{ height: 200 }}
                         />
                     </Box>
 
-                    <Box>
+                    <Column>
                         <Section title="dashboard.stepOne.title">
                             {t('dashboard.stepOne.description')}
                         </Section>
@@ -69,7 +65,7 @@ const DashboardScreen = () => {
                         <Section title="dashboard.learnMore.title">
                             {t('dashboard.learnMore.description')}
                         </Section>
-                    </Box>
+                    </Column>
                 </Column>
             </ScrollView>
         </Column>
